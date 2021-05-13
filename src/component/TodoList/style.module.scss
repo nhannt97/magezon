@@ -1,0 +1,21 @@
+.title {
+  width: 250px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.deadline {
+  width: 220px;
+}
+
+.textArea::before {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  right: 10px;
+  content: "";
+  width: 10px;
+  height: 10px;
+}

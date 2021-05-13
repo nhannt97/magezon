@@ -1,0 +1,25 @@
+form {
+  display: initial;
+}
+
+.title {
+  width: 250px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.deadline {
+  width: 220px;
+}
+
+.showDoneAll {
+  visibility: unset;
+}
+
+.hideDoneAll {
+  visibility: hidden;
+}
+
+.addIcon {
+  color: green;
+}
