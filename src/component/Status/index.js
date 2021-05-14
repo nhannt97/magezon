@@ -54,9 +54,9 @@ function Status({ totalItemActive, status, onChangeStatus, hasDoneItem }) {
           size="small"
           variant="outlined"
           classes={{
-            outlined: status !== "notCompleted" ? style.noBorderBtn : "",
+            outlined: status !== false ? style.noBorderBtn : "",
           }}
-          onClick={() => onChangeStatus("notCompleted")}
+          onClick={() => onChangeStatus(false)}
         >
           Active
         </Button>
@@ -64,9 +64,9 @@ function Status({ totalItemActive, status, onChangeStatus, hasDoneItem }) {
           size="small"
           variant="outlined"
           classes={{
-            outlined: status !== "completed" ? style.noBorderBtn : "",
+            outlined: status !== true ? style.noBorderBtn : "",
           }}
-          onClick={() => onChangeStatus("completed")}
+          onClick={() => onChangeStatus(true)}
         >
           Completed
         </Button>

@@ -32,11 +32,9 @@ function App() {
 
   const updateShowTodoList = () => {
     setShowTodoList(
-      todoList?.filter(
+      status === "all" ? todoList : todoList?.filter(
         (todo) =>
-          status === "all" ||
-          (todo.completed && status === "completed") ||
-          (!todo.completed && status === "notCompleted")
+          todo.completed === status
       )
     );
   };
